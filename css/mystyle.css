@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+.header {
+    background-color: blue;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+video {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@media only screen and  (min-width:600px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
+
+.menu ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.menu li {
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 3px black, 0px 1px 2px black;
+}
+.menu li:hover {
+    background-color: grey;
+}
+.sidebar {
+    background-color: grey;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.side {
+    background-color: lightgrey;
+    padding-bottom: 50px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.footer {
+    background-color: blueviolet;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 0%;
+}
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 'header header header header' 'menu main main right' 'menu footer footer footer';
+    grid-template-rows:  50px;
+    justify-content:;
+    background-color: blue;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.grid-item {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: menu;
+}
+.item3 {
+    grid-area: main;
+}
+.item4 {
+    grid-area: right;
+}
+.item5 {
+    grid-area: footer;
+}
+
+
+
+    
+

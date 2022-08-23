@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>donnywebsite.com</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="sign">
+    <header>
+        <img src="../images/MyWebLogo.jpg" alt="website logo" height="70px" >
+        <h1>DONNY WEBSITE</h1>
+    </header>
+    <div>
+        <div>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="right"><a class="active" href="Sign_Up.html">SIGN-UP</a></li>
+                <li class="right"><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+        <div>
+            <form action="">
+                <fieldset>
+                    <legend>Create An Account</legend>
+                    <label for="Fname">First Name:</label>
+                    <input type="text" name="firstname" placeholder="Daniel">
+                    <label for="Lname">Last Name:</label>
+                    <input type="text" name="lastname" placeholder="Isiyemi">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="sample@gmail.com">
+                    <label for="country">Country:</label>
+                    <select name="country">
+                        <option value="nigeria">Nigeria</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="south-african">South-African</option>
+                        <option value="cameroon">Cameroom</option>
+                        <option value="united-kingdom">United Kingdom</option>
+                        <option value="USA">USA</option>
+                        <option value="argetina">Argetina</option>
+                    </select>
+                    <div class="gender">
+                        <label for="gender" style="font-size: 25px; font-weight: bold;">Gender:</label><br>
+                        <input type="radio" name="gender" value="male" checked>Male <br>
+                        <input type="radio" name="gender" value="female" checked>Female <br>
+                        <input type="radio" name="gender" value="others" checked>Others <br><br>
+                    </div>
+                    <div class="date">
+                        <label for="DOB">Date Of Birth:</label>
+                        <input type="date" value="DOB">
+                    </div><br>
+                    <button>Sign Up</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <footer><img src="../images/logo3.jpg" alt="" class="imgg"> copyright &copy; 2022</footer>
+    </div>
+</body>
+</html>
